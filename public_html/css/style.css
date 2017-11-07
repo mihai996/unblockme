@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    background-color: #AA8C3D;
+    background-color: #80D0FF;
+    background-image: url('../img/sky_bg.jpg');
+}
+
+.body {
+    width: 100vw;
+}
+
+.main {
+    position: relative;
+    width: 440px;
+    margin: 0px auto;
+}
+
+.title, .menu {
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.text.error {
+    font-size: 18px;
+    font-family: Helvetica;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFF00;
+}
+
+.title {
+    font-size: 28px;
+
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #050505;
+    cursor: pointer;
+}
+
+.buttons button {
+    margin: 5px 0;
+    position: absolute;
+    width: 30%;
+    right: 0;
+    background-color: #FFAA00;
+    border: 2px solid #885500;
+    border-radius: 5px;
+    padding: 5px 2px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.menu .item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 5px 0;
+    background-color: #EEAA00;
+    border: 2px solid #885500;
+    border-radius: 5px;
+    font-family: Helvetica;
+    text-decoration: none;
+    /*vertical-align: center;*/
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.all_maps li {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    display: flex;
+    float: left;
+    background-color: #EEAA00;
+    border: 2px solid #885500;
+    border-radius: 5px;
+}
+
+.all_maps ul {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* -------------- GAME -------------  */
+.game {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    position: relative;
+    height: 420px;
+    width: 420px;
+    background-color: #6D4A21;
+    background-color: #604020;
+    border: 10px solid #002121;
+    padding: 0;
+}
+
+.block:active {
+    cursor: none;
+}
+
+.block {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #E0B070;
+    border: 2px solid #604020;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    cursor: pointer;
+
+    left: 0;
+    top: 0;
+
+    /*-webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    transition: left 0.5s;
+
+    -webkit-transition: top 0.5s;
+    -moz-transition: top 0.5s;
+    transition: top 0.5s;*/
+}
+
+.destination {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #FA3111;
+    opacity: 0.3;
+    width: 140px;
+    height: 70px;
+    border: 2px solid #512100;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    left: 280px;
+    top: 140px;
+}
+
+.block.vertical {
+    width: 70px;
+    background: -webkit-linear-gradient(left, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070); /* For Safari 5.1 to 6.0 */
+    background: -moz-linear-gradient(right, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070); /* For Firefox 3.6 to 15 */
+    background: -o-linear-gradient(right, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070); /* For Opera 11.1 to 12.0 */
+    background: linear-gradient(to right, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070); /* Standard syntax */
+}
+
+.block.horizontal {
+    height: 70px;
+    background: -webkit-linear-gradient(#E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070); /* For Safari 5.1 to 6.0 */
+    background: -moz-linear-gradient(#E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070); /* For Firefox 3.6 to 15 */
+    background: -o-linear-gradient(#E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070); /* For Opera 11.1 to 12.0 */
+    background: linear-gradient(#E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070, #FFCF8F, #E0B070); /* Standard syntax */
+}
+
+.block[id=block00] {
+    background: #FA3111; /* For browsers that do not support gradients */
+}
+
+/* .v2 = type: vertical; length: 2;*/
+.block.vertical.v2 {
+    height: 140px;
+}
+
+.block.vertical.v3 {
+    height: 210px;
+}
+
+.block.vertical.v4 {
+    height: 280px;
+}
+
+/* .h2 = type: horizontal; length: 2;*/
+.block.horizontal.h2 {
+    width: 140px;
+}
+
+.block.horizontal.h3 {
+    width: 210px;
+}
+
+.block.horizontal.h4 {
+    width: 280px;
+}
+
+/* .x0 = pozX: 0;*/
+.block.x0 {
+    left: 0;
+}
+
+.block.x1 {
+    left: 70px;
+}
+
+.block.x2 {
+    left: 140px;
+}
+
+.block.x3 {
+    left: 210px;
+}
+
+.block.x4 {
+    left: 280px;
+}
+
+.block.x5 {
+    left: 350px;
+}
+
+/* .y1 = pozY: 1;*/
+.block.y0 {
+    top: 0;
+}
+
+.block.y1 {
+    top: 70px;
+}
+
+.block.y2 {
+    top: 140px;
+}
+
+.block.y3 {
+    top: 210px;
+}
+
+.block.y4 {
+    top: 280px;
+}
+
+.block.y5 {
+    top: 350px;
+}
+
+
+
+
